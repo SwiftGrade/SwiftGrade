@@ -1,7 +1,5 @@
-.darktheme{
-    background-color: #111;
-}
-
-.darktheme main {
-    color: white;
+.decor {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
 }
