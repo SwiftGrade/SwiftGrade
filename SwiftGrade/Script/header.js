@@ -4,9 +4,9 @@ const dropDownMenu = document.querySelector('.dropdown')
 
 ToggleBtn.onclick = function () {
     dropDownMenu.classList.toggle('open')
-    const isOpen = dropDownMenu.classList.contains('open')
+    const isOpenMenu = dropDownMenu.classList.contains('open')
 
-ToggleBtnIcon.classList = isOpen
+ToggleBtnIcon.classList = isOpenMenu
     ? 'fa-solid fa-xmark'
     : 'fa-solid fa-bars'
 }
