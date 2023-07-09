@@ -132,7 +132,7 @@ li, a {
 }
 
 .dropdown.open{
-    height: 240px;
+    height: 480px;
 }
 
 .dropdown .login-navlink button {
