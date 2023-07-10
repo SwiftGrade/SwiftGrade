@@ -38,7 +38,7 @@ li, a {
 .logo:hover {
     transform: skewX(-20deg) translateX(20px);
     transition: ease 0.25s;
-    filter: drop-shadow(-10px 0 10px #817147);
+    filter: drop-shadow(-10px 0 5px #817147);
 }
 
 /*Responsive Logo*/
