@@ -8,46 +8,38 @@ body {
     align-items: center;
     height: 100vh;
 }
-
-.login-container {
+.register-container {
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 9px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    width: 350px;
 }
-
-.login-container h2 {
+.register-container h2 {
     text-align: center;
 }
-
-.login-form {
+.register-form {
     margin-top: 20px;
 }
-
-.login-form label {
+.register-form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
-
-.login-form input[type="text"], .login-form input[type="password"] {
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
     width: 90%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
 }
-
-.login-form button {
+.register-form button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 9px;
+    border-radius: 3px;
     cursor: pointer;
-}
-
-.login-form button:hover {
-    background-color: #0c5cb3;
 }
