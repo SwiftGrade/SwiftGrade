@@ -6,11 +6,13 @@
 }
 
 body {
-    background-color: #362b0e;
     height: 100vh;
+    background-color: #e2d9c3;
 }
 
 .hero {
+    background-color: rgba(177, 141, 65, 0.5);
+    margin: 10px 10%;
     color: white;
     text-align: center;
     display: flex;
@@ -19,9 +21,11 @@ body {
     position: relative;
     flex-direction: column;
     height: 80vh;
+    z-index: -10;
 }
 
 .hero img {
     margin-left: auto;
     margin-right: auto;
 }
+
