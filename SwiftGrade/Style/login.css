@@ -91,3 +91,24 @@ body {
 .login-form button:hover {
     background-color: #555;
 }
+
+/*Responsive*/
+@media only screen and (max-width: 10000px){
+    .logo {
+        display: block;
+    }
+
+    .logores {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .logo {
+        display: none;
+    }
+
+    .logores {
+        display: block;
+    }
+}
