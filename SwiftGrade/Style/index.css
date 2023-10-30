@@ -29,3 +29,9 @@ body {
     margin-right: auto;
 }
 
+.about {
+    background-image: linear-gradient(transparent, goldenrod, goldenrod, goldenrod,transparent);
+    padding: 50% 50px;
+    height: 80vh;
+}
+
