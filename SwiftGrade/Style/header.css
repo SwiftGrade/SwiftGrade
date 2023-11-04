@@ -11,7 +11,7 @@ header {
     align-items: center;
     width: 100%;
     position: fixed;
-    padding: 0 10vw;
+    padding: 0 5vw;
 }
 
 
@@ -29,7 +29,7 @@ header {
 
 .navbar {
     width: 12vw;
-    background-image: linear-gradient(to right, #5d5e21, transparent);
+    background-image: linear-gradient(to right, #a87c1d, transparent);
     text-shadow: 5px 5px 10px black;
     height: 100vh;
     padding-left: 2vw;
@@ -50,7 +50,7 @@ header {
     font-size: 20px;
     font-weight: bold;
     padding-top: 12vh;
-    transition: ease 0.15s;
+    transition: ease 0.2s;
 }
 
 .navbar li:hover {
