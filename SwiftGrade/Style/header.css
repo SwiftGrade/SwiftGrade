@@ -3,10 +3,11 @@
 header {
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     position: fixed;
+    padding: 0 10vw;
 }
 li, a {
     text-decoration: none;
@@ -18,9 +19,12 @@ li, a {
 .logo {
     width: 10vw;
     height: 10vh;
-    justify-content: center;
 }
 
-.mainnavbar ul {
-    list-style: none;
+.menu button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2vw;
 }
+
