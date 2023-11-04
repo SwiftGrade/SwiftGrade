@@ -1,12 +1,13 @@
 /*Head Nav*/
 
 .head {
+    margin: 0;
     display: flex;
     padding: 30px 10%;
-    background-color: goldenrod;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: fixed;
 }
 li, a {
     text-decoration: none;

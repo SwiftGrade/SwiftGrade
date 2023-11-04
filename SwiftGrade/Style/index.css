@@ -7,32 +7,25 @@
 
 body {
     height: 100vh;
-    background-color: #e2d9c3;
+    background-image: linear-gradient(yellow,goldenrod);
+    background-attachment: fixed;
 }
 
 .hero {
-    background-color: rgba(177, 141, 65, 0.5);
     margin: 10px 10%;
     color: white;
-    text-align: center;
+    text-align: start;
     display: flex;
     justify-content: center;
-    text-align: center;
     position: relative;
     flex-direction: column;
     height: 80vh;
     z-index: -10;
 }
 
-.hero img {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .about {
-    background-image: linear-gradient(transparent, goldenrod, goldenrod, goldenrod,transparent);
-    padding: 50% 50px;
-    height: 50vh;
+    padding: 30% 50px;
+    height: 30vh;
     display: flex;
 }
 
