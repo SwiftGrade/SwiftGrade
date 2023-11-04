@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-image: linear-gradient(yellow,goldenrod);
+    background-image: linear-gradient(rgb(212, 212, 56),rgb(212, 156, 12));
     background-attachment: fixed;
 }
 
