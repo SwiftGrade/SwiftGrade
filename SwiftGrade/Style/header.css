@@ -35,7 +35,6 @@ header {
     padding-left: 2vw;
     padding-top: 10vh;
     display: flex;
-    position: fixed;
     overflow: auto;
 }
 
@@ -51,4 +50,10 @@ header {
     font-size: 20px;
     font-weight: bold;
     padding-top: 12vh;
+    transition: ease 0.15s;
+}
+
+.navbar li:hover {
+    transform: translateX(2vw);
+    transition: ease 0.3s;
 }
