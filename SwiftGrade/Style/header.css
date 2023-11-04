@@ -1,4 +1,8 @@
 /*Head Nav*/
+body {
+    width: 100vw;
+    height: 100vh;
+}
 
 header {
     margin: 0;
@@ -9,12 +13,7 @@ header {
     position: fixed;
     padding: 0 10vw;
 }
-li, a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    color: black;
-}
+
 
 .logo {
     width: 10vw;
@@ -28,3 +27,28 @@ li, a {
     font-size: 2vw;
 }
 
+.navbar {
+    width: 12vw;
+    background-image: linear-gradient(to right, #5d5e21, transparent);
+    text-shadow: 5px 5px 10px black;
+    height: 100vh;
+    padding-left: 2vw;
+    padding-top: 10vh;
+    display: flex;
+    position: fixed;
+    overflow: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li, a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 12vh;
+}
