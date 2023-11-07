@@ -1,19 +1,11 @@
-const ToggleBtn = document.querySelector('.hamburger_menu')
-const ToggleBtnIcon = document.querySelector('.hamburger_menu i')
-const dropDownMenu = document.querySelector('.dropdown')
-
-ToggleBtn.onclick = function () {
-    dropDownMenu.classList.toggle('open')
-    const isOpenMenu = dropDownMenu.classList.contains('open')
-
-ToggleBtnIcon.classList = isOpenMenu
-    ? 'fa-solid fa-xmark'
-    : 'fa-solid fa-bars'
-}
-
-const ToggleSettings = document.querySelector('.settings-menu')
-const dropDownSettings = document.querySelector('.settings-dropdown')
-
-ToggleSettings.onclick = function (){
-    dropDownSettings.classList.toggle('open')
-}
+window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('header');
+    if (window.scrollY > 50) {
+      navbar.style.backgroundColor = 'rgb(216, 160, 20)';
+      navbar.style.padding = '10px 0'
+    } else {
+      navbar.style.backgroundColor = 'transparent';
+      navbar.style.padding = '30px 0';
+    }
+  });
+  
