@@ -1,63 +1,52 @@
-/*Head Nav*/
-body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(gold, goldenrod);
-    background-repeat: unset;
+body{
+    background-image: radial-gradient( #e8c24c, goldenrod);
+    background-attachment: fixed;
 }
 
-header {
-    margin: 0;
+section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    padding: 0 5vw;
-}
-
-
-.logo {
-    width: 10vw;
-    height: 10vh;
-}
-
-.menu button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2vw;
-}
-
-.navbar {
-    width: 12vw;
-    background-image: linear-gradient(to right, #a87c1d, transparent);
-    text-shadow: 5px 5px 10px black;
-    height: 100vh;
-    padding-left: 2vw;
-    padding-top: 10vh;
-    display: flex;
-    overflow: auto;
-}
-
-.navbar ul {
-    list-style: none;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.navbar li, a {
-    text-decoration: none;
+.hero {
+    height: 100vh;
+}
+
+.hero a {
+    background-color: transparent;
     color: white;
+    border: 3px solid white;
+    text-decoration: none;
+    padding: 20px 40px;
+    margin: 20px;
     font-size: 20px;
     font-weight: bold;
-    padding-top: 12vh;
-    transition: ease 0.2s;
+    border-radius: 40px;
+    transition: ease 200ms;
 }
 
-.navbar li:hover {
-    transform: translateX(2vw);
-    transition: ease 0.3s;
+.hero a:hover {
+    background-image: linear-gradient(white, wheat);
+    border: 3px solid transparent;
+    color: yellow;
+    transform: scale(1.1);
+    transition: ease 200ms;
+}
+
+.about {
+    background-color: white;
+    padding: 40px;
+}
+
+.about .expla {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about .expla h3 {
+    font-size: 40px;
 }
