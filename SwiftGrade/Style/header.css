@@ -32,6 +32,38 @@ header {
     transition: ease 200ms;
 }
 
+.hamburger button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.hamburger button:active {
+    background-color: red;
+}
+
+.dropdown-c {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+
+.dropdown-c li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.dropdown-c li a {
+    text-decoration: none;
+}
+
+.show {display: block;}
+
 @media screen and (max-width: 590px) {
     header {
         justify-content: space-around;
