@@ -13,6 +13,7 @@ section {
 
 .hero {
     height: 100vh;
+    color: white;
 }
 
 .hero a {
@@ -34,20 +35,4 @@ section {
     color: yellow;
     transform: scale(1.1);
     transition: ease 200ms;
-}
-
-.about {
-    background-color: white;
-    padding: 40px;
-}
-
-.about .expla {
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.about .expla h3 {
-    font-size: 40px;
 }
