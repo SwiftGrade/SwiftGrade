@@ -15,6 +15,7 @@ header {
     width: 100%;
 }
 
+
 .navbar li, .navbar a {
     list-style: none;
     display: inline-block;
@@ -39,13 +40,10 @@ header {
     color: white;
 }
 
-.hamburger button:active {
-    background-color: red;
-}
-
 .dropdown-c {
-    display: block;
-    position: absolute;
+    display: none;
+    position: relative;
+    justify-content: center;
     z-index: 1;
     background-color: white;
     text-align: center;
@@ -60,11 +58,16 @@ header {
 
 .dropdown-c li a {
     text-decoration: none;
+    color: black;
 }
 
-.show {display: block;}
+.dropdown-c li:hover {
+    transform: scale(1.1);
+}
 
-@media screen and (max-width: 590px) {
+.show {display: flex;}
+
+@media screen and (max-width: 600px) {
     header {
         justify-content: space-around;
     }
