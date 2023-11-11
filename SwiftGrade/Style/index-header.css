@@ -6,7 +6,7 @@
 }
 
 header {
-    padding: 20px 0;
+    padding: 30px 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -14,7 +14,6 @@ header {
     z-index: 1;
     position: fixed;
     width: 100%;
-    background-color: goldenrod;
 }
 
 

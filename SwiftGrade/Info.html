@@ -7,32 +7,60 @@
     <title>SwiftGrade</title>
     <link rel="icon" href="Images/IMG_1073.png">
     <link rel="stylesheet" href="Style/header.css"/>
-    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/info.css">
 </head>
 <body>
-    <header>
+     <!--Header-->
+
+     <header>
         <div class="logo">
-            <img src="Images/IMG_1073.png" alt="logo" width="60px">
+            <a href="index.html"><img src="Images/IMG_1073.png" alt="logo" width="60px"></a>
         </div>
         <div class="navbar">
             <ul>
                 <li><a href="#Check">About</a></li>
-                <li><a href="#">Conteact Us</a></li>
+                <li><a href="#">Contact Us</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </div>
-
         <div class="hamburger">
+            
             <button onclick="DropDown()"><i class="fa-solid fa-bars" style="font-size: 30px;"></i></button>
             <div id="Drop" class="dropdown-c">
-                <ul>
-                    <li><a href="#Check">Check</a></li>
-                    <li><a href="#">Score</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
+                <div class="user">
+                    <div class="userlogo"><img src="https://i.pinimg.com/564x/0f/52/50/0f5250d3d9604e9b88345d868a6b2868.jpg" alt="user" style="width: 100px; height: 100px; border-radius: 50%;"></div>
+                    <div class="username" style="font-size: 25px; font-weight: bold;">Bronya Zaychik</div>
+                </div>
+                <hr style="border: 1px solid black;">
+                <div class="menu">
+                    <ul>
+                        <li><a href="Info.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+                        <li><a href="#score"><i class="fa-solid fa-file-circle-check"></i> Check Scores</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-users"></i> SwiftGrade Support</a></li>
+                        <li><a href="#logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
+
+    <!--Section-->
+    <section>
+        <div class="infomenu">
+            <ul>
+                <li><button>User Information</button></li>
+                <li><button>Parents Information</button></li>
+                <li><button>Adress Information</button></li>
+                <li><button>Check Scores</button></li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <section class="profile">
+            <img src="https://i.pinimg.com/564x/da/3c/0f/da3c0fcb76f6cd6e9a13c42ea0dbea58.jpg" alt="userpic">
+        </section>
+    </main>
+
+    <script src="Script/header.js"></script>
 </body>
 </html>
