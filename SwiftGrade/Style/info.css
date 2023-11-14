@@ -31,14 +31,33 @@
     background-color: rgba(210, 162, 30, 0.5);
 }
 
-main .profile {
+main {
     float: right;
     position: absolute;
     top: 20vh;
     left: 25vw;
+    width: 70vw;
+}
+
+main .profile {   
+    background-color: wheat;
+    display: flex;
 }
 
 main .profile img {
     width: 150px;
-    height: auto;
+    height: 250px;
+}
+
+main .profile table {
+    float: left;
+}
+
+main .gpa table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+main .gpa table th, td {
+    padding: 20px;
 }
