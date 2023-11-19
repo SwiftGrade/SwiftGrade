@@ -54,12 +54,12 @@ var optionData = {
         ["English Fundamental", "50","50","100","4"],
         ["Mathematics Supplemental", "50","50","100","4"],
         ["Physics", "50","50","100","4"],
-        ["Chemistry", "50","50","100","4"],
+        ["Chemistry", "15","12","27","0"],//zero
         ["Biology", "50","50","100","4"],
         ["Artificial Intelligence Basics","50","50","100","4"],
         ["GCSS","50","50","100","4"],
         ["Mathematics Supplemental", "50","50","100","4"],
-        ["English Supplemental", "50","50","100","4"],
+        ["English Supplemental", "43","12","55","R"],//R
         ["English MLP", "50","50","100","4"],
     ],
     op4: [
@@ -130,23 +130,45 @@ var optionData = {
     ]
   };
 
-      function updateTable() {
-      var selectedOption = document.getElementById("contentSelector").value;
-      var tableData = optionData[selectedOption] || optionData.default;
+  function updateTable() {
+    var selectedOption = document.getElementById("contentSelector").value;
+    var tableData = optionData[selectedOption] || optionData.default;
 
-      var tableContent = "<table>";
+    var tableContent = "<table>";
 
-      for (var i = 0; i < tableData.length; i++) {
-        tableContent += "<tr>";
+    for (var i = 0; i < tableData.length; i++) {
+      // Check if any cell in the row contains '0' or 'R'
+      var containsZero = false;
+      var containsR = false;
 
-        for (var j = 0; j < tableData[i].length; j++) {
-          tableContent += "<td>" + tableData[i][j] + "</td>";
+      for (var j = 0; j < tableData[i].length; j++) {
+        if (tableData[i][j] === '0') {
+          containsZero = true;
         }
-
-        tableContent += "</tr>";
+        if (tableData[i][j].includes('R')) {
+          containsR = true;
+        }
       }
 
-      tableContent += "</table>";
+      // Apply classes to the row based on content
+      var rowClass = '';
 
-      document.getElementById("dynamicTable").innerHTML = tableContent;
+      if (containsZero && !containsR) {
+        rowClass = 'containsZero';
+      } else if (containsR) {
+        rowClass = 'containsR';
+      }
+
+      tableContent += "<tr class='" + rowClass + "'>";
+
+      for (var k = 0; k < tableData[i].length; k++) {
+        tableContent += "<td>" + tableData[i][k] + "</td>";
+      }
+
+      tableContent += "</tr>";
     }
+
+    tableContent += "</table>";
+
+    document.getElementById("dynamicTable").innerHTML = tableContent;
+}

@@ -13,3 +13,12 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+
+.containsR {
+    background-color: rgb(219, 183, 128);
+}
+
+.containsZero {
+    background-color: crimson;
+    color: white;
+}
