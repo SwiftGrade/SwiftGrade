@@ -131,60 +131,68 @@ var optionData = {
   };
 
   function updateTable() {
-    var selectedOption = document.getElementById("contentSelector").value;
-    var tableData = optionData[selectedOption] || optionData.default;
+    // Show loader for 1 second
+    document.getElementById("loader").style.display = "block";
+    setTimeout(function() {
+      document.getElementById("loader").style.display = "none";
+      
+      var selectedOption = document.getElementById("contentSelector").value;
+      var tableData = optionData[selectedOption] || optionData.default;
 
-    var tableContent = "<table>";
+      var tableContent = "<table>";
 
-    for (var i = 0; i < tableData.length; i++) {
-      // Check if it's the first row for headers
-      var isFirstRow = i === 0;
+      for (var i = 0; i < tableData.length; i++) {
+        // Check if it's the first row for headers
+        var isFirstRow = i === 0;
 
-      // Create <th> elements for the first row
-      if (isFirstRow) {
-        tableContent += "<tr>";
+        // Create <th> elements for the first row
+        if (isFirstRow) {
+          tableContent += "<tr>";
 
-        for (var h = 0; h < tableData[i].length; h++) {
-          tableContent += "<th>" + tableData[i][h] + "</th>";
+          for (var h = 0; h < tableData[i].length; h++) {
+            tableContent += "<th>" + tableData[i][h] + "</th>";
+          }
+
+          tableContent += "</tr>";
+          continue; // Skip to the next iteration
+        }
+
+        // Check if any cell in the row contains '0' or 'R'
+        var containsZero = false;
+        var containsR = false;
+
+        for (var j = 0; j < tableData[i].length; j++) {
+          if (tableData[i][j] === '0') {
+            containsZero = true;
+          }
+          if (tableData[i][j] === 'R') {
+            containsR = true;
+          }
+        }
+
+        // Apply classes to the row based on content
+        var rowClass = '';
+
+        if (containsZero && !containsR) {
+          rowClass = 'containsZero';
+        } else if (containsR) {
+          rowClass = 'containsR';
+        }
+
+        tableContent += "<tr class='" + rowClass + "'>";
+
+        for (var k = 0; k < tableData[i].length; k++) {
+          tableContent += "<td>" + tableData[i][k] + "</td>";
         }
 
         tableContent += "</tr>";
-        continue; // Skip to the next iteration
       }
 
-      // Check if any cell in the row contains '0' or 'R'
-      var containsZero = false;
-      var containsR = false;
+      tableContent += "</table>";
 
-      for (var j = 0; j < tableData[i].length; j++) {
-        if (tableData[i][j] === '0') {
-          containsZero = true;
-        }
-        if (tableData[i][j].includes('R')) {
-          containsR = true;
-        }
-      }
+      document.getElementById("dynamicTable").innerHTML = tableContent;
+    }, 1000); // 1000 milliseconds = 1 second
+  }
 
-      // Apply classes to the row based on content
-      var rowClass = '';
-
-      if (containsZero && !containsR) {
-        rowClass = 'containsZero';
-      } else if (containsR) {
-        rowClass = 'containsR';
-      }
-
-      tableContent += "<tr class='" + rowClass + "'>";
-
-      for (var k = 0; k < tableData[i].length; k++) {
-        tableContent += "<td>" + tableData[i][k] + "</td>";
-      }
-
-      tableContent += "</tr>";
-    }
-
-    tableContent += "</table>";
-
-    document.getElementById("dynamicTable").innerHTML = tableContent;
-
-}
+  // Call updateTable when the page is loaded to display default content
+  window.onload = updateTable;
