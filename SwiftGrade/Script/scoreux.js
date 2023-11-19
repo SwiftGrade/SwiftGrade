@@ -56,8 +56,8 @@ var optionData = {
         ["Physics", "50","50","100","4"],
         ["Chemistry", "50","50","100","4"],
         ["Biology", "50","50","100","4"],
-        ["Artificial Intelligence Basics","50","50","100","4"]
-        ["GCSS","50","50","100","4"]
+        ["Artificial Intelligence Basics","50","50","100","4"],
+        ["GCSS","50","50","100","4"],
         ["Mathematics Supplemental", "50","50","100","4"],
         ["English Supplemental", "50","50","100","4"],
         ["English MLP", "50","50","100","4"],
@@ -77,8 +77,8 @@ var optionData = {
         ["Physics", "50","50","100","4"],
         ["Chemistry", "50","50","100","4"],
         ["Biology", "50","50","100","4"],
-        ["Artificial Intelligence Basics","50","50","100","4"]
-        ["GCSS","50","50","100","4"]
+        ["Artificial Intelligence Basics","50","50","100","4"],
+        ["GCSS","50","50","100","4"],
         ["Mathematics Supplemental", "50","50","100","4"],
         ["English Supplemental", "50","50","100","4"],
         ["English MLP", "50","50","100","4"],
@@ -98,8 +98,8 @@ var optionData = {
         ["Physics", "50","50","100","4"],
         ["Chemistry", "50","50","100","4"],
         ["Biology", "50","50","100","4"],
-        ["Artificial Intelligence Basics","50","50","100","4"]
-        ["GCSS","50","50","100","4"]
+        ["Artificial Intelligence Basics","50","50","100","4"],
+        ["GCSS","50","50","100","4"],
         ["Mathematics Supplemental", "50","50","100","4"],
         ["English Supplemental", "50","50","100","4"],
         ["English MLP", "50","50","100","4"],
@@ -119,8 +119,8 @@ var optionData = {
         ["Physics", "50","50","100","4"],
         ["Chemistry", "50","50","100","4"],
         ["Biology", "50","50","100","4"],
-        ["Artificial Intelligence Basics","50","50","100","4"]
-        ["GCSS","50","50","100","4"]
+        ["Artificial Intelligence Basics","50","50","100","4"],
+        ["GCSS","50","50","100","4"],
         ["Mathematics Supplemental", "50","50","100","4"],
         ["English Supplemental", "50","50","100","4"],
         ["English MLP", "50","50","100","4"],
@@ -130,28 +130,23 @@ var optionData = {
     ]
   };
 
-  function updateTable() {
-    // Get the selected value from the dropdown
-    var selectedOption = document.getElementById("contentSelector").value;
+      function updateTable() {
+      var selectedOption = document.getElementById("contentSelector").value;
+      var tableData = optionData[selectedOption] || optionData.default;
 
-    // Get data for the selected option or use default data
-    var tableData = optionData[selectedOption] || optionData.default;
+      var tableContent = "<table>";
 
-    // Build the table HTML
-    var tableContent = "<table>";
+      for (var i = 0; i < tableData.length; i++) {
+        tableContent += "<tr>";
 
-    for (var i = 0; i < tableData.length; i++) {
-      tableContent += "<tr>";
+        for (var j = 0; j < tableData[i].length; j++) {
+          tableContent += "<td>" + tableData[i][j] + "</td>";
+        }
 
-      for (var j = 0; j < tableData[i].length; j++) {
-        tableContent += "<td>" + tableData[i][j] + "</td>";
+        tableContent += "</tr>";
       }
 
-      tableContent += "</tr>";
+      tableContent += "</table>";
+
+      document.getElementById("dynamicTable").innerHTML = tableContent;
     }
-
-    tableContent += "</table>";
-
-    // Update the content of the table container
-    document.getElementById("dynamicTable").innerHTML = tableContent;
-  }
