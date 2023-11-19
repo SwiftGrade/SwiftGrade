@@ -7,7 +7,9 @@
     <title>SwiftGrade</title>
     <link rel="icon" href="Images/IMG_1073.png">
     <link rel="stylesheet" href="Style/header.css"/>
-    <link rel="stylesheet" href="Style/info.css">
+    <link rel="stylesheet" href="Style/cont.css">
+    <link rel="stylesheet" href="Style/scores.css">
+    <script src="Script/scoreux.js"></script>
 </head>
 <body>
      <!--Header-->
@@ -54,45 +56,23 @@
         </div>
     </section>
     <main>
-        <section class="gpa">
-            <table>
-                <tr>
-                    <th>Subject</th>
-                    <th>Midterm</th>
-                    <th>Final</th>
-                    <th>Total</th>
-                    <th>Grade</th>
-                </tr>
-                <tr>
-                    <td>Fundamental Mathematic</td>
-                    <td>40</td>
-                    <td>39</td>
-                    <td>79</td>
-                    <td>3.5</td>
-                </tr>
-                <tr>
-                    <td>Thai</td>
-                    <td>40</td>
-                    <td>39</td>
-                    <td>79</td>
-                    <td>3.5</td>
-                </tr>
-                <tr>
-                    <td>Fundamental English</td>
-                    <td>40</td>
-                    <td>39</td>
-                    <td>79</td>
-                    <td>3.5</td>
-                </tr>
-                <tr>
-                    <td>Computer</td>
-                    <td>50</td>
-                    <td>50</td>
-                    <td>100</td>
-                    <td>4</td>
-                </tr>
-            </table>
-        </section>
+        <form onsubmit="updateTable(); return false;">
+            <!-- Dropdown for selecting content -->
+            <label for="contentSelector">Semester:</label>
+            <select id="contentSelector" name="contentSelector">
+              <option value="opt1">1/2564</option>
+              <option value="opt2">2/2564</option>
+              <option value="opt3">1/2565</option>
+              <option value="opt4">2/2565</option>
+              <option value="opt5">1/2566</option>
+              <option value="opt6">2/2566</option>
+            </select>
+        
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+          </form>
+
+          <div id="dynamicTable"></div>
     </main>
 
     <script src="Script/header.js"></script>
