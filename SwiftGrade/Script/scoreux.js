@@ -1,5 +1,5 @@
 var optionData = {
-    opt1: [
+    op1: [
         ["Name", "Midterm","Final","Score","GPA"],
         ["Thai Fundamental", "50","50","100","4"],
         ["Mathematics Fundamental", "50","50","100","4"],
@@ -20,7 +20,7 @@ var optionData = {
         ["English Supplemental", "50","50","100","4"],
         ["English MLP", "50","50","100","4"],
     ],
-    opt2: [
+    op2: [
         ["Name", "Midterm","Final","Score","GPA"],
         ["Thai Fundamental", "50","50","100","4"],
         ["Mathematics Fundamental", "50","50","100","4"],
@@ -41,7 +41,7 @@ var optionData = {
         ["English Supplemental", "50","50","100","4"],
         ["English MLP", "50","50","100","4"],
     ],
-    opt3: [
+    op3: [
         ["Name", "Midterm","Final","Score","GPA"],
         ["Thai Fundamental", "50","50","100","4"],
         ["Mathematics Fundamental", "50","50","100","4"],
@@ -62,7 +62,7 @@ var optionData = {
         ["English Supplemental", "50","50","100","4"],
         ["English MLP", "50","50","100","4"],
     ],
-    opt4: [
+    op4: [
         ["Name", "Midterm","Final","Score","GPA"],
         ["Thai Fundamental", "50","50","100","4"],
         ["Mathematics Fundamental", "50","50","100","4"],
@@ -83,7 +83,7 @@ var optionData = {
         ["English Supplemental", "50","50","100","4"],
         ["English MLP", "50","50","100","4"],
     ],
-    opt5: [
+    op5: [
         ["Name", "Midterm","Final","Score","GPA"],
         ["Thai Fundamental", "50","50","100","4"],
         ["Mathematics Fundamental", "50","50","100","4"],
@@ -104,7 +104,7 @@ var optionData = {
         ["English Supplemental", "50","50","100","4"],
         ["English MLP", "50","50","100","4"],
     ],
-    opt6: [
+    op6: [
         ["Name", "Midterm","Final","Score","GPA"],
         ["Thai Fundamental", "50","50","100","4"],
         ["Mathematics Fundamental", "50","50","100","4"],
