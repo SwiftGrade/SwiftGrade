@@ -9,22 +9,28 @@ var optionData = {
       ["Unity Project","30","25/Jan/2023","Pending",""],
     ],
     op2: [
-      // Add your data for option 2 here
+        ["Assignment", "Marks", "Due Date", "Status", "Submit"],
+        ["Worksheet","10","24/Nov/2023","Pending",""],
     ],
     op3: [
-      // Add your data for option 3 here
+        ["Assignment", "Marks", "Due Date", "Status", "Submit"],
+        ["Worksheet","10","24/Nov/2023","Pending",""],
     ],
     op4: [
-      // Add your data for option 4 here
+        ["Assignment", "Marks", "Due Date", "Status", "Submit"],
+        ["Worksheet","10","24/Nov/2023","Pending",""],
     ],
     op5: [
-      // Add your data for option 5 here
+        ["Assignment", "Marks", "Due Date", "Status", "Submit"],
+        ["Worksheet","10","24/Nov/2023","Pending",""],
     ],
     op6: [
-      // Add your data for option 6 here
+        ["Assignment", "Marks", "Due Date", "Status", "Submit"],
+        ["Worksheet","10","24/Nov/2023","Pending",""],
     ],
     default: [
-      // Add your default data here
+        ["Assignment", "Marks", "Due Date", "Status", "Submit"],
+        ["Worksheet","10","24/Nov/2023","Pending",""],
     ]
   };
 
