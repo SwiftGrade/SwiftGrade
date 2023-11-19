@@ -137,6 +137,21 @@ var optionData = {
     var tableContent = "<table>";
 
     for (var i = 0; i < tableData.length; i++) {
+      // Check if it's the first row for headers
+      var isFirstRow = i === 0;
+
+      // Create <th> elements for the first row
+      if (isFirstRow) {
+        tableContent += "<tr>";
+
+        for (var h = 0; h < tableData[i].length; h++) {
+          tableContent += "<th>" + tableData[i][h] + "</th>";
+        }
+
+        tableContent += "</tr>";
+        continue; // Skip to the next iteration
+      }
+
       // Check if any cell in the row contains '0' or 'R'
       var containsZero = false;
       var containsR = false;
@@ -171,4 +186,5 @@ var optionData = {
     tableContent += "</table>";
 
     document.getElementById("dynamicTable").innerHTML = tableContent;
+
 }
