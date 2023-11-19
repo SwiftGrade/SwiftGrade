@@ -8,7 +8,7 @@
     <link rel="icon" href="Images/IMG_1073.png">
     <link rel="stylesheet" href="Style/header.css"/>
     <link rel="stylesheet" href="Style/cont.css">
-    <link rel="stylesheet" href="Style/info.css">
+    <link rel="stylesheet" href="Style/subj.css">
 </head>
 <body>
      <!--Header-->
@@ -58,9 +58,28 @@
         </div>
     </section>
     <main>
+        <h1>Assignments</h1>
+        <form onsubmit="updateTable(); return false;">
+            <!-- Dropdown for selecting content -->
+            <label for="contentSelector">Choose Subject:</label>
+            <select id="contentSelector" name="contentSelector">
+              <option value="op1">Computer</option>
+              <option value="op2">Thai Fundamental</option>
+              <option value="op3">1/2565</option>
+              <option value="op4">2/2565</option>
+              <option value="op5">1/2566</option>
+              <option value="op6">2/2566</option>
+            </select>
         
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+          </form>
+
+          <div id="loader"></div>
+          <div id="dynamicTable"></div>
     </main>
 
     <script src="Script/header.js"></script>
+    <script src="Script/subjux.js"></script>
 </body>
 </html>
