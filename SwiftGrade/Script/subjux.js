@@ -6,9 +6,7 @@ var optionData = {
       ["3D Modelling","10","24/Nov/2023","Pending",""],
       ["Unity 2D Worksheet","10","1/Dec/2023","Pending",""],
       ["Unity 3D Worksheet","10","8/Dec/2023","Pending",""],
-      ["Unity Project","30","25/Feb/2023","Pending",""],
-
-
+      ["Unity Project","30","25/Jan/2023","Pending",""],
     ],
     op2: [
       // Add your data for option 2 here
