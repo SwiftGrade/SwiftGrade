@@ -4,7 +4,7 @@ var optionData = {
         ["Thai Fundamental", "50","50","100","4"],
         ["Mathematics Fundamental", "50","50","100","4"],
         ["Science Fundamental", "50","50","100","4"],
-        ["Computer", "50","50","100","4"],
+        ["Computer", "49","26","75","R"],
         ["Social Fundamental", "50","50","100","4"],
         ["History", "50","50","100","4"],
         ["Health and Physical Education", "50","50","100","4"],
@@ -193,6 +193,3 @@ var optionData = {
       document.getElementById("dynamicTable").innerHTML = tableContent;
     }, 1000); // 1000 milliseconds = 1 second
   }
-
-  // Call updateTable when the page is loaded to display default content
-  window.onload = updateTable;
