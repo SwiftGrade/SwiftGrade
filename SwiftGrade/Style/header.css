@@ -100,3 +100,13 @@ header {
         display: none;
     }
 }
+
+.logo {
+    transition: ease 200ms;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: ease 200ms;
+    filter: drop-shadow(0 0 5px white);
+}
