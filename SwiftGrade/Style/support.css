@@ -1,0 +1,23 @@
+.chat {
+    height: 70vh;
+    background-color: rgb(163, 163, 79);
+}
+
+.chat .chatmenu li {
+    list-style: none;
+}
+
+.chat .chatmenu li button {
+    padding: 16px 20px;
+    border: none;
+    font-size: 20px;
+    width: 20%;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+
+.chat .chatmenu li button img {
+    width: 40px;
+    border-radius: 50%;
+}
