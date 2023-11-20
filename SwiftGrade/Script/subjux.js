@@ -10,15 +10,19 @@ var optionData = {
     ],
     op2: [
         ["Assignment", "Marks", "Due Date", "Status", "Submit"],
-        ["Worksheet","10","24/Nov/2023","Pending",""],
+        ["Book Work","10","24/Nov/2023","Pending",""],
+        ["Worksheet 1","10","30/Nov/2023","Pending",""],
     ],
     op3: [
         ["Assignment", "Marks", "Due Date", "Status", "Submit"],
-        ["Worksheet","10","24/Nov/2023","Pending",""],
+        ["Book IPST","10","8/Nov/2023","Late",""],
+        ["Polymer Lab","15","8/Nov/2023","Complete",""],
     ],
     op4: [
         ["Assignment", "Marks", "Due Date", "Status", "Submit"],
-        ["Worksheet","10","24/Nov/2023","Pending",""],
+        ["Presentation","15","20/Dec/2023","Pending",""],
+        ["Reduce Activity","15","20/Jan/2024","Pending",""],
+        ["Lab","10","17/Nov/2023","Complete",""],
     ],
     op5: [
         ["Assignment", "Marks", "Due Date", "Status", "Submit"],
